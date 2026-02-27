@@ -1,5 +1,6 @@
 package com.linkedin.users_service.exception;
 
+import com.linkedin.users_service.dto.ErrorDetails;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;

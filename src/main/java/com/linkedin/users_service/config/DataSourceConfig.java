@@ -2,9 +2,9 @@ package com.linkedin.users_service.config;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-import lombok.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.beans.factory.annotation.Value;
 
 import javax.sql.DataSource;
 
@@ -33,4 +33,5 @@ public class DataSourceConfig {
         config.setMaxLifetime(1800000);
 
         return new HikariDataSource(config);
+    }
 }
